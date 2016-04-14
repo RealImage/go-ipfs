@@ -328,7 +328,8 @@ func (r *FSRepo) openConfig() error {
 func (r *FSRepo) openDatastore() error {
 	switch r.config.Datastore.Type {
 	case "default", "leveldb", "":
-		d, err := openDefaultDatastore(r)
+		//d, err := openDefaultDatastore(r)
+		d, err := openS3Datastore(r)
 		if err != nil {
 			return err
 		}
