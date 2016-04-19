@@ -5,11 +5,14 @@ import (
 	"errors"
 	"fmt"
 	"io"
+	"strconv"
 	"strings"
 
 	key "github.com/RealImage/go-ipfs/blocks/key"
+	bserv "github.com/RealImage/go-ipfs/blockservice"
 	cmds "github.com/RealImage/go-ipfs/commands"
 	"github.com/RealImage/go-ipfs/core"
+	offline "github.com/RealImage/go-ipfs/exchange/offline"
 	dag "github.com/RealImage/go-ipfs/merkledag"
 	path "github.com/RealImage/go-ipfs/path"
 	u "gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
@@ -50,10 +53,11 @@ NOTE: List all references recursively by using the flag '-r'.
 		cmds.StringArg("ipfs-path", true, true, "Path to the object(s) to list refs from.").EnableStdin(),
 	},
 	Options: []cmds.Option{
-		cmds.StringOption("format", "Emit edges with given format. Available tokens: <src> <dst> <linkname>.").Default("<dst>"),
+		cmds.StringOption("format", "Emit edges with given format. Available tokens: <src> <dst> <linkname> <linksize> <linkcached>.").Default("<dst>"),
 		cmds.BoolOption("edges", "e", "Emit edge format: `<from> -> <to>`.").Default(false),
 		cmds.BoolOption("unique", "u", "Omit duplicate refs from output.").Default(false),
 		cmds.BoolOption("recursive", "r", "Recursively list links of child nodes.").Default(false),
+		cmds.BoolOption("cached", "List only links of child nodes cached locally.").Default(false),
 	},
 	Run: func(req cmds.Request, res cmds.Response) {
 		ctx := req.Context()
@@ -87,6 +91,17 @@ NOTE: List all references recursively by using the flag '-r'.
 			return
 		}
 
+		cached, _, err := req.Option("cached").Bool()
+		if err != nil {
+			res.SetError(err, cmds.ErrNormal)
+			return
+		}
+
+		ds := n.DAG
+		if cached {
+			ds = dag.NewDAGService(bserv.New(n.Blockstore, offline.Exchange(n.Blockstore)))
+		}
+
 		objs, err := objectsForPaths(ctx, n, req.Arguments())
 		if err != nil {
 			res.SetError(err, cmds.ErrNormal)
@@ -101,12 +116,13 @@ NOTE: List all references recursively by using the flag '-r'.
 
 			rw := RefWriter{
 				out:       out,
-				DAG:       n.DAG,
+				DAG:       ds,
 				Ctx:       ctx,
 				Unique:    unique,
 				PrintEdge: edges,
 				PrintFmt:  format,
 				Recursive: recursive,
+				Cached:    cached,
 			}
 
 			for _, o := range objs {
@@ -213,6 +229,7 @@ type RefWriter struct {
 
 	Unique    bool
 	Recursive bool
+	Cached    bool
 	PrintEdge bool
 	PrintFmt  string
 
@@ -240,13 +257,19 @@ func (rw *RefWriter) writeRefsRecursive(n *dag.Node) (int, error) {
 			continue
 		}
 
-		if err := rw.WriteEdge(nkey, lk, n.Links[i].Name); err != nil {
-			return count, err
+		nd, err := ng.Get(rw.Ctx)
+
+		linkCached := (nd != nil)
+		if werr := rw.WriteEdge(nkey, lk, n.Links[i].Name, n.Links[i].Size, linkCached); werr != nil {
+			return count, werr
 		}
 
-		nd, err := ng.Get(rw.Ctx)
 		if err != nil {
-			return count, err
+			if rw.Cached {
+				continue
+			} else {
+				return count, err
+			}
 		}
 
 		c, err := rw.writeRefsRecursive(nd)
@@ -255,6 +278,7 @@ func (rw *RefWriter) writeRefsRecursive(n *dag.Node) (int, error) {
 			return count, err
 		}
 	}
+
 	return count, nil
 }
 
@@ -276,7 +300,7 @@ func (rw *RefWriter) writeRefsSingle(n *dag.Node) (int, error) {
 			continue
 		}
 
-		if err := rw.WriteEdge(nkey, lk, l.Name); err != nil {
+		if err := rw.WriteEdge(nkey, lk, l.Name, l.Size, true); err != nil {
 			return count, err
 		}
 		count++
@@ -302,7 +326,7 @@ func (rw *RefWriter) skip(k key.Key) bool {
 }
 
 // Write one edge
-func (rw *RefWriter) WriteEdge(from, to key.Key, linkname string) error {
+func (rw *RefWriter) WriteEdge(from, to key.Key, linkname string, linksize uint64, linkcached bool) error {
 	if rw.Ctx != nil {
 		select {
 		case <-rw.Ctx.Done(): // just in case.
@@ -318,6 +342,8 @@ func (rw *RefWriter) WriteEdge(from, to key.Key, linkname string) error {
 		s = strings.Replace(s, "<src>", from.B58String(), -1)
 		s = strings.Replace(s, "<dst>", to.B58String(), -1)
 		s = strings.Replace(s, "<linkname>", linkname, -1)
+		s = strings.Replace(s, "<linksize>", strconv.FormatUint(linksize, 10), -1)
+		s = strings.Replace(s, "<linkcached>", strconv.FormatBool(linkcached), -1)
 	case rw.PrintEdge:
 		s = from.B58String() + " -> " + to.B58String()
 	default:
