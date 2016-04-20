@@ -33,15 +33,6 @@ func openS3Datastore(r *FSRepo) (repo.Datastore, error) {
 		return nil, fmt.Errorf("unable to open leveldb datastore: %v", err)
 	}
 
-	// 4TB of 256kB objects ~=17M objects, splitting that 256-way
-	// leads to ~66k objects per dir, splitting 256*256-way leads to
-	// only 256.
-	//
-	// The keys seen by the block store have predictable prefixes,
-	// including "/" from datastore.Key and 2 bytes from multihash. To
-	// reach a uniform 256-way split, we need approximately 4 bytes of
-	// prefix.
-
 	region := os.Getenv("AWS_REGION")
 	if len(region) == 0 {
 		return nil, fmt.Errorf("AWS_REGION not set")
