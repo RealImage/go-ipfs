@@ -181,17 +181,13 @@ func (bt *s3Batch) Delete(key datastore.Key) error {
 
 func (bt *s3Batch) Commit() error {
 	var wg sync.WaitGroup
-	var callsRemaining = len(bt.puts)
-	var callsInProgress = 0
 
 	errCh := make(chan error, maxConcurrentCalls)
 	defer close(errCh)
 
+	i := 0
 	for k, v := range bt.puts {
 		wg.Add(1)
-		callsRemaining--
-		callsInProgress++
-
 		go func() {
 			err := bt.ds.Put(k, v)
 			if err != nil {
@@ -199,8 +195,9 @@ func (bt *s3Batch) Commit() error {
 			}
 			wg.Done()
 		}()
+		i++
 
-		if callsInProgress >= maxConcurrentCalls || callsRemaining == 0 {
+		if (i%maxConcurrentCalls) == 0 || i == len(bt.puts) {
 			wg.Wait()
 
 			select {
@@ -211,21 +208,18 @@ func (bt *s3Batch) Commit() error {
 		}
 	}
 
-	callsRemaining = len(bt.deletes)
-	callsInProgress = 0
-
+	i = 0
 	for k, _ := range bt.deletes {
 		wg.Add(1)
-		callsRemaining--
-		callsInProgress++
-
 		go func() {
 			err := bt.ds.Delete(k)
 			if err != nil {
 				errCh <- err
 			}
 		}()
-		if callsInProgress >= maxConcurrentCalls || callsRemaining == 0 {
+		i++
+
+		if (i%maxConcurrentCalls) == 0 || i == len(bt.deletes) {
 			wg.Wait()
 
 			select {
