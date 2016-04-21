@@ -1,26 +1,27 @@
 package fsrepo
 
 import (
+	"encoding/json"
 	"fmt"
 	"path"
 
 	ds "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/flatfs"
 	levelds "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/leveldb"
 	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/measure"
 	mount "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/syncmount"
 	ldbopts "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/syndtr/goleveldb/leveldb/opt"
 	repo "github.com/ipfs/go-ipfs/repo"
-	config "github.com/ipfs/go-ipfs/repo/config"
-	"github.com/ipfs/go-ipfs/thirdparty/dir"
+	"github.com/ipfs/go-ipfs/thirdparty/s3datastore"
 )
 
-const (
-	leveldbDirectory = "datastore"
-	flatfsDirectory  = "blocks"
-)
+type S3Params struct {
+	Region    string `json:"region"`
+	AccessKey string `json:"accessKey"`
+	SecretKey string `json:"secretKey"`
+	Bucket    string `json:"bucket"`
+}
 
-func openDefaultDatastore(r *FSRepo) (repo.Datastore, error) {
+func openS3Datastore(r *FSRepo) (repo.Datastore, error) {
 	leveldbPath := path.Join(r.path, leveldbDirectory)
 
 	// save leveldb reference so it can be neatly closed afterward
@@ -31,18 +32,28 @@ func openDefaultDatastore(r *FSRepo) (repo.Datastore, error) {
 		return nil, fmt.Errorf("unable to open leveldb datastore: %v", err)
 	}
 
-	// 4TB of 256kB objects ~=17M objects, splitting that 256-way
-	// leads to ~66k objects per dir, splitting 256*256-way leads to
-	// only 256.
-	//
-	// The keys seen by the block store have predictable prefixes,
-	// including "/" from datastore.Key and 2 bytes from multihash. To
-	// reach a uniform 256-way split, we need approximately 4 bytes of
-	// prefix.
-	syncfs := !r.config.Datastore.NoSync
-	blocksDS, err := flatfs.New(path.Join(r.path, flatfsDirectory), 4, syncfs)
+	config, err := r.Config()
 	if err != nil {
-		return nil, fmt.Errorf("unable to open flatfs datastore: %v", err)
+		return nil, fmt.Errorf("unable to get config: %v", err)
+	}
+
+	if config == nil {
+		return nil, fmt.Errorf("config is empty")
+	}
+
+	if config.Datastore.Params == nil {
+		return nil, fmt.Errorf("no params specified")
+	}
+
+	p := S3Params{}
+	err = json.Unmarshal(*config.Datastore.Params, &p)
+	if err != nil {
+		return nil, fmt.Errorf("unable to parse S3 params: %v", err)
+	}
+
+	blocksDS, err := s3datastore.New("s3-"+p.Region+".amazonaws.com", p.Bucket, p.AccessKey, p.SecretKey)
+	if err != nil {
+		return nil, fmt.Errorf("unable to open s3 datastore: %v", err)
 	}
 
 	// Add our PeerID to metrics paths to keep them unique
@@ -69,19 +80,4 @@ func openDefaultDatastore(r *FSRepo) (repo.Datastore, error) {
 	})
 
 	return mountDS, nil
-}
-
-func initDefaultDatastore(repoPath string, conf *config.Config) error {
-	// The actual datastore contents are initialized lazily when Opened.
-	// During Init, we merely check that the directory is writeable.
-	leveldbPath := path.Join(repoPath, leveldbDirectory)
-	if err := dir.Writable(leveldbPath); err != nil {
-		return fmt.Errorf("datastore: %s", err)
-	}
-
-	flatfsPath := path.Join(repoPath, flatfsDirectory)
-	if err := dir.Writable(flatfsPath); err != nil {
-		return fmt.Errorf("datastore: %s", err)
-	}
-	return nil
 }

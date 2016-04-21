@@ -27,11 +27,8 @@ type S3Datastore struct {
 	cache  *lru.Cache
 }
 
-func New(domain, bucketName string) (*S3Datastore, error) {
-	k, err := s3gof3r.EnvKeys()
-	if err != nil {
-		return nil, err
-	}
+func New(domain, bucketName, accessKey, secretKey string) (*S3Datastore, error) {
+	k := s3gof3r.Keys{AccessKey: accessKey, SecretKey: secretKey}
 
 	ds := &S3Datastore{}
 
