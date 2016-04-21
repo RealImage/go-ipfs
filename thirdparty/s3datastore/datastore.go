@@ -19,12 +19,15 @@ var _ datastore.ThreadSafeDatastore = &S3Datastore{}
 var ErrInvalidType = errors.New("s3 datastore: invalid type error")
 
 const (
-	maxConcurrentCalls = 128
+	maxConcurrentCalls  = 128
+	cacheSize           = 32
+	nonExistentKeysSize = 512
 )
 
 type S3Datastore struct {
-	bucket *s3gof3r.Bucket
-	cache  *lru.Cache
+	bucket          *s3gof3r.Bucket
+	cache           *lru.Cache
+	nonExistentKeys *lru.Cache
 }
 
 func New(domain, bucketName string) (*S3Datastore, error) {
@@ -49,7 +52,8 @@ func New(domain, bucketName string) (*S3Datastore, error) {
 	*ds.bucket.Config = *s3gof3r.DefaultConfig
 	ds.bucket.Config.Md5Check = false
 
-	ds.cache = lru.New(32)
+	ds.cache = lru.New(cacheSize)
+	ds.nonExistentKeys = lru.New(nonExistentKeysSize)
 
 	return ds, nil
 }
@@ -99,12 +103,18 @@ func (ds *S3Datastore) Put(key datastore.Key, value interface{}) error {
 	}
 
 	ds.cache.Add(k, v)
+	ds.nonExistentKeys.Remove(k)
 
 	return nil
 }
 
 func (ds *S3Datastore) Get(key datastore.Key) (interface{}, error) {
 	k := ds.encode(key)
+
+	_, ok := ds.nonExistentKeys.Get(k)
+	if ok {
+		return nil, errors.New("not exist")
+	}
 
 	b, ok := ds.cache.Get(k)
 	if ok {
@@ -113,6 +123,13 @@ func (ds *S3Datastore) Get(key datastore.Key) (interface{}, error) {
 
 	r, _, err := ds.bucket.GetReader(k, nil)
 	if err != nil {
+		respErr, ok := err.(*s3gof3r.RespError)
+		if ok {
+			if respErr.StatusCode == http.StatusNotFound {
+				ds.nonExistentKeys.Add(k, struct{}{})
+			}
+		}
+
 		return nil, err
 	} else if r == nil {
 		return nil, errors.New("nil reader")
