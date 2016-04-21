@@ -1,8 +1,8 @@
 package fsrepo
 
 import (
-	"encoding/json"
 	"fmt"
+	"os"
 	"path"
 
 	ds "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
@@ -13,13 +13,6 @@ import (
 	repo "github.com/ipfs/go-ipfs/repo"
 	"github.com/ipfs/go-ipfs/thirdparty/s3datastore"
 )
-
-type S3Params struct {
-	Region    string `json:"region"`
-	AccessKey string `json:"accessKey"`
-	SecretKey string `json:"secretKey"`
-	Bucket    string `json:"bucket"`
-}
 
 func openS3Datastore(r *FSRepo) (repo.Datastore, error) {
 	leveldbPath := path.Join(r.path, leveldbDirectory)
@@ -32,26 +25,17 @@ func openS3Datastore(r *FSRepo) (repo.Datastore, error) {
 		return nil, fmt.Errorf("unable to open leveldb datastore: %v", err)
 	}
 
-	config, err := r.Config()
-	if err != nil {
-		return nil, fmt.Errorf("unable to get config: %v", err)
+	region := os.Getenv("AWS_REGION")
+	if len(region) == 0 {
+		return nil, fmt.Errorf("AWS_REGION not set")
 	}
 
-	if config == nil {
-		return nil, fmt.Errorf("config is empty")
+	bucket := os.Getenv("IPFS_S3_BUCKET")
+	if len(bucket) == 0 {
+		return nil, fmt.Errorf("IPFS_S3_BUCKET not set")
 	}
 
-	if config.Datastore.Params == nil {
-		return nil, fmt.Errorf("no params specified")
-	}
-
-	p := S3Params{}
-	err = json.Unmarshal(*config.Datastore.Params, &p)
-	if err != nil {
-		return nil, fmt.Errorf("unable to parse S3 params: %v", err)
-	}
-
-	blocksDS, err := s3datastore.New("s3-"+p.Region+".amazonaws.com", p.Bucket, p.AccessKey, p.SecretKey)
+	blocksDS, err := s3datastore.New("s3-"+region+".amazonaws.com", bucket)
 	if err != nil {
 		return nil, fmt.Errorf("unable to open s3 datastore: %v", err)
 	}
