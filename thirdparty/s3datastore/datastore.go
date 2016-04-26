@@ -8,10 +8,10 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/golang/groupcache/lru"
+	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/golang/groupcache/lru"
 	datastore "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
 	query "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/query"
-	"github.com/rlmcpherson/s3gof3r"
+	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/rlmcpherson/s3gof3r"
 )
 
 var _ datastore.ThreadSafeDatastore = &S3Datastore{}
