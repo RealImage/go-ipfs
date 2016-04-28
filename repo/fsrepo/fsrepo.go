@@ -333,6 +333,12 @@ func (r *FSRepo) openDatastore() error {
 			return err
 		}
 		r.ds = d
+	case "s3":
+		d, err := openS3Datastore(r)
+		if err != nil {
+			return err
+		}
+		r.ds = d
 	default:
 		return fmt.Errorf("unknown datastore type: %s", r.config.Datastore.Type)
 	}

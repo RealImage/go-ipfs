@@ -257,6 +257,14 @@
 			"ImportPath": "gopkg.in/fsnotify.v1",
 			"Comment": "v1.2.0",
 			"Rev": "96c060f6a6b7e0d6f75fddd10efeaca3e5d1bcb0"
+		},
+		{
+			"ImportPath": "github.com/golang/groupcache",
+			"Rev": "4eab30f13db9d8b25c752e99d1583628ac2fa422"
+		},
+		{
+			"ImportPath": "github.com/rlmcpherson/s3gof3r",
+			"Rev": "39f5507f61031141057f3f880d9fb9eb97b8afd7"
 		}
 	]
 }
