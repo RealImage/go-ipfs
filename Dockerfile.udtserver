@@ -32,36 +32,46 @@ ENV GOPATH     /go
 ENV PATH       /go/bin:$PATH
 ENV SRC_PATH   /go/src/github.com/ipfs/go-ipfs
 
-# Get the go-ipfs sourcecode
-COPY . $SRC_PATH
+RUN apk add --update musl go=$GO_VERSION git bash wget ca-certificates
 
-RUN apk add --update musl go=$GO_VERSION git bash wget ca-certificates \
-	# Setup user and fs-repo directory
-	&& mkdir -p $IPFS_PATH \
+# Setup user and fs-repo directory
+RUN mkdir -p $IPFS_PATH \
 	&& adduser -D -h $IPFS_PATH -u 1000 ipfs \
-	&& chown ipfs:ipfs $IPFS_PATH && chmod 755 $IPFS_PATH \
-	# Install gx
-	&& go get -u github.com/whyrusleeping/gx \
+	&& chown ipfs:ipfs $IPFS_PATH && chmod 755 $IPFS_PATH
+
+RUN mkdir -p $SRC_PATH
+
+# Get the go-ipfs sourcecode
+COPY package.json $SRC_PATH
+
+# Install gx
+RUN go get -u github.com/whyrusleeping/gx \
 	&& go get -u github.com/whyrusleeping/gx-go \
 	# Point gx to a specific IPFS API
 	&& ([ -z "$GX_IPFS" ] || echo $GX_IPFS > $IPFS_PATH/api) \
 	# Invoke gx
-	&& cd $SRC_PATH \
-	&& gx --verbose install --global \
-	# We get the current commit using this hack,
-	# so that we don't have to copy all of .git/ into the build context.
-	# This saves us quite a bit of image size.
-	&& ref="$(cat .git/HEAD | cut -d' ' -f2)" \
+	&& cd $SRC_PATH && gx --verbose install --global
+
+# Get the go-ipfs sourcecode
+COPY . $SRC_PATH
+
+# We get the current commit using this hack,
+# so that we don't have to copy all of .git/ into the build context.
+# This saves us quite a bit of image size.
+RUN cd $SRC_PATH \
+    && ref="$(cat .git/HEAD | cut -d' ' -f2)" \
 	&& commit="$(cat .git/$ref | head -c 7)" \
-	&& echo "ldflags=-X github.com/ipfs/go-ipfs/repo/config.CurrentCommit=$commit" \
-	# Build and install IPFS and entrypoint script
-	&& cd $SRC_PATH/cmd/ipfs \
+	&& echo "ldflags=-X github.com/ipfs/go-ipfs/repo/config.CurrentCommit=$commit"
+
+# Build and install IPFS and entrypoint script
+RUN cd $SRC_PATH/cmd/ipfs \
 	&& go build -ldflags "-X github.com/ipfs/go-ipfs/repo/config.CurrentCommit=$commit" \
 	&& cp ipfs /usr/local/bin/ipfs \
-	&& cp $SRC_PATH/bin/container_daemon /usr/local/bin/start_ipfs \
-	&& chmod 755 /usr/local/bin/start_ipfs \
-	# Remove all build-time dependencies
-	&& apk del --purge musl go git && rm -rf $GOPATH && rm -vf $IPFS_PATH/api
+	&& cp $SRC_PATH/bin/container_daemon_udtserver /usr/local/bin/start_ipfs \
+	&& chmod 755 /usr/local/bin/start_ipfs
+
+# Remove all build-time dependencies
+RUN apk del --purge musl go git && rm -rf $GOPATH && rm -vf $IPFS_PATH/api
 
 # Call uid 1000 "ipfs"
 USER ipfs

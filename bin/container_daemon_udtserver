@@ -1,0 +1,30 @@
+#!/bin/sh
+
+user=$(whoami)
+repo="$IPFS_PATH"
+config="$repo/config"
+tmp_config="/tmp/config"
+
+# Test whether the mounted directory is writable for us
+if [ ! -w "$repo" 2>/dev/null ]; then
+  echo "error: $repo is not writable for user $user (uid=$(id -u $user))"
+  exit 1
+fi
+
+ipfs version
+
+if [ -e $config ]; then
+  echo "Found IPFS fs-repo at $repo"
+else
+  ipfs init -e
+  ipfs config Addresses.API /ip4/0.0.0.0/tcp/5001
+  ipfs config Addresses.Gateway /ip4/0.0.0.0/tcp/8080
+  ipfs config Datastore.Type s3
+
+  cp $config $tmp_config
+  rm -rf $repo/*
+  ipfs init -e < $tmp_config
+  rm $tmp_config
+fi
+
+exec ipfs daemon
