@@ -8,11 +8,11 @@ import (
 	goprocess "gx/ipfs/QmQopLATEYMNg7dVqZRNDfeE2S1yKy8zrRh5xnYiuqeZBn/goprocess"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 
-	"github.com/ipfs/go-ipfs/core"
-	mock "github.com/ipfs/go-ipfs/core/mock"
-	namesys "github.com/ipfs/go-ipfs/namesys"
-	. "github.com/ipfs/go-ipfs/namesys/republisher"
-	path "github.com/ipfs/go-ipfs/path"
+	"github.com/RealImage/go-ipfs/core"
+	mock "github.com/RealImage/go-ipfs/core/mock"
+	namesys "github.com/RealImage/go-ipfs/namesys"
+	. "github.com/RealImage/go-ipfs/namesys/republisher"
+	path "github.com/RealImage/go-ipfs/path"
 	peer "gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer"
 	mocknet "gx/ipfs/QmcQTVCQWCN2MYgBHpFXE5S56rcg2mRsxaRgMYmA1UWgA8/go-libp2p/p2p/net/mock"
 )

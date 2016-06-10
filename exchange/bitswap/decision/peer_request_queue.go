@@ -4,9 +4,9 @@ import (
 	"sync"
 	"time"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	wantlist "github.com/ipfs/go-ipfs/exchange/bitswap/wantlist"
-	pq "github.com/ipfs/go-ipfs/thirdparty/pq"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	wantlist "github.com/RealImage/go-ipfs/exchange/bitswap/wantlist"
+	pq "github.com/RealImage/go-ipfs/thirdparty/pq"
 	peer "gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer"
 )
 

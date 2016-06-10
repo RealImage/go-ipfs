@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	ci "github.com/ipfs/go-ipfs/thirdparty/testutil/ci"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	ci "github.com/RealImage/go-ipfs/thirdparty/testutil/ci"
 
 	"gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 )

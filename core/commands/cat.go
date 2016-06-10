@@ -3,10 +3,10 @@ package commands
 import (
 	"io"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
-	core "github.com/ipfs/go-ipfs/core"
-	"github.com/ipfs/go-ipfs/core/corerepo"
-	coreunix "github.com/ipfs/go-ipfs/core/coreunix"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	core "github.com/RealImage/go-ipfs/core"
+	"github.com/RealImage/go-ipfs/core/corerepo"
+	coreunix "github.com/RealImage/go-ipfs/core/coreunix"
 
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 )

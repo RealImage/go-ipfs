@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/fzzy/radix/redis"
-	datastore "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
-	query "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/query"
+	datastore "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
+	query "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/query"
 )
 
 var _ datastore.Datastore = &Datastore{}

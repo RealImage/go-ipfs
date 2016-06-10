@@ -4,10 +4,10 @@ import (
 	"io"
 	"strings"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
-	files "github.com/ipfs/go-ipfs/core/commands/files"
-	ocmd "github.com/ipfs/go-ipfs/core/commands/object"
-	unixfs "github.com/ipfs/go-ipfs/core/commands/unixfs"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	files "github.com/RealImage/go-ipfs/core/commands/files"
+	ocmd "github.com/RealImage/go-ipfs/core/commands/object"
+	unixfs "github.com/RealImage/go-ipfs/core/commands/unixfs"
 	logging "gx/ipfs/QmaDNZ4QMdBdku1YZWBysufYyoQt1negQGNav6PLYarbY8/go-log"
 )
 

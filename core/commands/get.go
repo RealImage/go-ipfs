@@ -9,13 +9,13 @@ import (
 	gopath "path"
 	"strings"
 
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/cheggaaa/pb"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/cheggaaa/pb"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
-	core "github.com/ipfs/go-ipfs/core"
-	path "github.com/ipfs/go-ipfs/path"
-	tar "github.com/ipfs/go-ipfs/thirdparty/tar"
-	uarchive "github.com/ipfs/go-ipfs/unixfs/archive"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	core "github.com/RealImage/go-ipfs/core"
+	path "github.com/RealImage/go-ipfs/path"
+	tar "github.com/RealImage/go-ipfs/thirdparty/tar"
+	uarchive "github.com/RealImage/go-ipfs/unixfs/archive"
 )
 
 var ErrInvalidCompressionLevel = errors.New("Compression level must be between 1 and 9")

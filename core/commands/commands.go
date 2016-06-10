@@ -11,7 +11,7 @@ import (
 	"sort"
 	"strings"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
+	cmds "github.com/RealImage/go-ipfs/commands"
 )
 
 type Command struct {

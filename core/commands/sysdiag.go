@@ -5,10 +5,10 @@ import (
 	"path"
 	"runtime"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
-	config "github.com/ipfs/go-ipfs/repo/config"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	config "github.com/RealImage/go-ipfs/repo/config"
 
-	sysi "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/whyrusleeping/go-sysinfo"
+	sysi "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/whyrusleeping/go-sysinfo"
 	manet "gx/ipfs/QmUBa4w6CbHJUMeGJPDiMEDWsM93xToK1fTnFXnrC8Hksw/go-multiaddr-net"
 )
 

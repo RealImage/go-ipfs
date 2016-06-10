@@ -3,7 +3,7 @@ package repo
 import (
 	"errors"
 
-	"github.com/ipfs/go-ipfs/repo/config"
+	"github.com/RealImage/go-ipfs/repo/config"
 )
 
 var errTODO = errors.New("TODO")

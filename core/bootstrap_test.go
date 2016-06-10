@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	config "github.com/ipfs/go-ipfs/repo/config"
-	testutil "github.com/ipfs/go-ipfs/thirdparty/testutil"
+	config "github.com/RealImage/go-ipfs/repo/config"
+	testutil "github.com/RealImage/go-ipfs/thirdparty/testutil"
 	peer "gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer"
 )
 

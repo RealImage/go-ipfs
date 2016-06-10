@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"sync"
 
-	chunk "github.com/ipfs/go-ipfs/importer/chunk"
-	dag "github.com/ipfs/go-ipfs/merkledag"
-	ft "github.com/ipfs/go-ipfs/unixfs"
-	mod "github.com/ipfs/go-ipfs/unixfs/mod"
+	chunk "github.com/RealImage/go-ipfs/importer/chunk"
+	dag "github.com/RealImage/go-ipfs/merkledag"
+	ft "github.com/RealImage/go-ipfs/unixfs"
+	mod "github.com/RealImage/go-ipfs/unixfs/mod"
 
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 )

@@ -24,15 +24,15 @@ import (
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 	logging "gx/ipfs/QmaDNZ4QMdBdku1YZWBysufYyoQt1negQGNav6PLYarbY8/go-log"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
-	cmdsCli "github.com/ipfs/go-ipfs/commands/cli"
-	cmdsHttp "github.com/ipfs/go-ipfs/commands/http"
-	core "github.com/ipfs/go-ipfs/core"
-	coreCmds "github.com/ipfs/go-ipfs/core/commands"
-	repo "github.com/ipfs/go-ipfs/repo"
-	config "github.com/ipfs/go-ipfs/repo/config"
-	fsrepo "github.com/ipfs/go-ipfs/repo/fsrepo"
-	loggables "github.com/ipfs/go-ipfs/thirdparty/loggables"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	cmdsCli "github.com/RealImage/go-ipfs/commands/cli"
+	cmdsHttp "github.com/RealImage/go-ipfs/commands/http"
+	core "github.com/RealImage/go-ipfs/core"
+	coreCmds "github.com/RealImage/go-ipfs/core/commands"
+	repo "github.com/RealImage/go-ipfs/repo"
+	config "github.com/RealImage/go-ipfs/repo/config"
+	fsrepo "github.com/RealImage/go-ipfs/repo/fsrepo"
+	loggables "github.com/RealImage/go-ipfs/thirdparty/loggables"
 )
 
 // log is the command logger

@@ -6,9 +6,9 @@ import (
 	"io"
 	"time"
 
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/codahale/metrics"
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/query"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/codahale/metrics"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/query"
 )
 
 // Histogram measurements exceeding these limits are dropped. TODO

@@ -5,10 +5,10 @@ import (
 	"net"
 	"strings"
 
-	isd "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/jbenet/go-is-domain"
+	isd "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/jbenet/go-is-domain"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 
-	path "github.com/ipfs/go-ipfs/path"
+	path "github.com/RealImage/go-ipfs/path"
 )
 
 type LookupTXTFunc func(name string) (txt []string, err error)

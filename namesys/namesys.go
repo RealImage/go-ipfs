@@ -4,9 +4,9 @@ import (
 	"strings"
 	"time"
 
-	ds "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
-	path "github.com/ipfs/go-ipfs/path"
-	routing "github.com/ipfs/go-ipfs/routing"
+	ds "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
+	path "github.com/RealImage/go-ipfs/path"
+	routing "github.com/RealImage/go-ipfs/routing"
 	ci "gx/ipfs/QmUEUu1CM8bxBJxc3ZLojAi8evhTr4byQogWstABet79oY/go-libp2p-crypto"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 )

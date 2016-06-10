@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	routing "github.com/ipfs/go-ipfs/routing"
+	routing "github.com/RealImage/go-ipfs/routing"
 	u "gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
 	peer "gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer"
 

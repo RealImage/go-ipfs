@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"io"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	cmds "github.com/ipfs/go-ipfs/commands"
-	core "github.com/ipfs/go-ipfs/core"
-	corerepo "github.com/ipfs/go-ipfs/core/corerepo"
-	dag "github.com/ipfs/go-ipfs/merkledag"
-	path "github.com/ipfs/go-ipfs/path"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	core "github.com/RealImage/go-ipfs/core"
+	corerepo "github.com/RealImage/go-ipfs/core/corerepo"
+	dag "github.com/RealImage/go-ipfs/merkledag"
+	path "github.com/RealImage/go-ipfs/path"
 	u "gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 )

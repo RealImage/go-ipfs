@@ -3,9 +3,9 @@ package nilrouting
 import (
 	"errors"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	repo "github.com/ipfs/go-ipfs/repo"
-	routing "github.com/ipfs/go-ipfs/routing"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	repo "github.com/RealImage/go-ipfs/repo"
+	routing "github.com/RealImage/go-ipfs/routing"
 	peer "gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 	logging "gx/ipfs/QmaDNZ4QMdBdku1YZWBysufYyoQt1negQGNav6PLYarbY8/go-log"

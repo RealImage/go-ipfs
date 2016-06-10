@@ -1,9 +1,9 @@
 package coreunix
 
 import (
-	core "github.com/ipfs/go-ipfs/core"
-	path "github.com/ipfs/go-ipfs/path"
-	uio "github.com/ipfs/go-ipfs/unixfs/io"
+	core "github.com/RealImage/go-ipfs/core"
+	path "github.com/RealImage/go-ipfs/path"
+	uio "github.com/RealImage/go-ipfs/unixfs/io"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 )
 

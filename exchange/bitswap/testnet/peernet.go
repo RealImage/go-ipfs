@@ -1,10 +1,10 @@
 package bitswap
 
 import (
-	ds "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
-	bsnet "github.com/ipfs/go-ipfs/exchange/bitswap/network"
-	mockrouting "github.com/ipfs/go-ipfs/routing/mock"
-	testutil "github.com/ipfs/go-ipfs/thirdparty/testutil"
+	ds "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
+	bsnet "github.com/RealImage/go-ipfs/exchange/bitswap/network"
+	mockrouting "github.com/RealImage/go-ipfs/routing/mock"
+	testutil "github.com/RealImage/go-ipfs/thirdparty/testutil"
 	peer "gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 	mockpeernet "gx/ipfs/QmcQTVCQWCN2MYgBHpFXE5S56rcg2mRsxaRgMYmA1UWgA8/go-libp2p/p2p/net/mock"

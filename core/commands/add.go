@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/cheggaaa/pb"
-	"github.com/ipfs/go-ipfs/core/coreunix"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/cheggaaa/pb"
+	"github.com/RealImage/go-ipfs/core/coreunix"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
-	files "github.com/ipfs/go-ipfs/commands/files"
-	core "github.com/ipfs/go-ipfs/core"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	files "github.com/RealImage/go-ipfs/commands/files"
+	core "github.com/RealImage/go-ipfs/core"
 	u "gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
 )
 

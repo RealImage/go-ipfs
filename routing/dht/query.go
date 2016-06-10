@@ -3,11 +3,11 @@ package dht
 import (
 	"sync"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	notif "github.com/ipfs/go-ipfs/notifications"
-	"github.com/ipfs/go-ipfs/routing"
-	pset "github.com/ipfs/go-ipfs/thirdparty/peerset"
-	todoctr "github.com/ipfs/go-ipfs/thirdparty/todocounter"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	notif "github.com/RealImage/go-ipfs/notifications"
+	"github.com/RealImage/go-ipfs/routing"
+	pset "github.com/RealImage/go-ipfs/thirdparty/peerset"
+	todoctr "github.com/RealImage/go-ipfs/thirdparty/todocounter"
 	u "gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
 	peer "gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer"
 	queue "gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer/queue"

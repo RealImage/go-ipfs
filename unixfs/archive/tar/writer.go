@@ -9,10 +9,10 @@ import (
 	proto "gx/ipfs/QmZ4Qi3GaRbjcx28Sme5eMH7RQjGkt8wHxt2a65oLaeFEV/gogo-protobuf/proto"
 	cxt "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 
-	mdag "github.com/ipfs/go-ipfs/merkledag"
-	ft "github.com/ipfs/go-ipfs/unixfs"
-	uio "github.com/ipfs/go-ipfs/unixfs/io"
-	upb "github.com/ipfs/go-ipfs/unixfs/pb"
+	mdag "github.com/RealImage/go-ipfs/merkledag"
+	ft "github.com/RealImage/go-ipfs/unixfs"
+	uio "github.com/RealImage/go-ipfs/unixfs/io"
+	upb "github.com/RealImage/go-ipfs/unixfs/pb"
 )
 
 // Writer is a utility structure that helps to write

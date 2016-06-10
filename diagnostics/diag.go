@@ -11,8 +11,8 @@ import (
 	"sync"
 	"time"
 
-	ctxio "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/jbenet/go-context/io"
-	pb "github.com/ipfs/go-ipfs/diagnostics/pb"
+	ctxio "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/jbenet/go-context/io"
+	pb "github.com/RealImage/go-ipfs/diagnostics/pb"
 	ggio "gx/ipfs/QmZ4Qi3GaRbjcx28Sme5eMH7RQjGkt8wHxt2a65oLaeFEV/gogo-protobuf/io"
 	proto "gx/ipfs/QmZ4Qi3GaRbjcx28Sme5eMH7RQjGkt8wHxt2a65oLaeFEV/gogo-protobuf/proto"
 	peer "gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer"

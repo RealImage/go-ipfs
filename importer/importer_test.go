@@ -6,10 +6,10 @@ import (
 	"io/ioutil"
 	"testing"
 
-	chunk "github.com/ipfs/go-ipfs/importer/chunk"
-	dag "github.com/ipfs/go-ipfs/merkledag"
-	mdtest "github.com/ipfs/go-ipfs/merkledag/test"
-	uio "github.com/ipfs/go-ipfs/unixfs/io"
+	chunk "github.com/RealImage/go-ipfs/importer/chunk"
+	dag "github.com/RealImage/go-ipfs/merkledag"
+	mdtest "github.com/RealImage/go-ipfs/merkledag/test"
+	uio "github.com/RealImage/go-ipfs/unixfs/io"
 	u "gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 )

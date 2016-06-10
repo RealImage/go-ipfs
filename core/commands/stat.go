@@ -7,9 +7,9 @@ import (
 	"io"
 	"time"
 
-	humanize "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/dustin/go-humanize"
+	humanize "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/dustin/go-humanize"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
+	cmds "github.com/RealImage/go-ipfs/commands"
 	u "gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
 	peer "gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer"
 	metrics "gx/ipfs/QmcQTVCQWCN2MYgBHpFXE5S56rcg2mRsxaRgMYmA1UWgA8/go-libp2p/p2p/metrics"

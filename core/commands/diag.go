@@ -8,8 +8,8 @@ import (
 	"text/template"
 	"time"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
-	diag "github.com/ipfs/go-ipfs/diagnostics"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	diag "github.com/RealImage/go-ipfs/diagnostics"
 )
 
 type DiagnosticConnection struct {

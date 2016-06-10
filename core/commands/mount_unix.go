@@ -8,9 +8,9 @@ import (
 	"io"
 	"strings"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
-	nodeMount "github.com/ipfs/go-ipfs/fuse/node"
-	config "github.com/ipfs/go-ipfs/repo/config"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	nodeMount "github.com/RealImage/go-ipfs/fuse/node"
+	config "github.com/RealImage/go-ipfs/repo/config"
 )
 
 var MountCmd = &cmds.Command{

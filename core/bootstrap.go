@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	config "github.com/ipfs/go-ipfs/repo/config"
-	lgbl "github.com/ipfs/go-ipfs/thirdparty/loggables"
-	math2 "github.com/ipfs/go-ipfs/thirdparty/math2"
+	config "github.com/RealImage/go-ipfs/repo/config"
+	lgbl "github.com/RealImage/go-ipfs/thirdparty/loggables"
+	math2 "github.com/RealImage/go-ipfs/thirdparty/math2"
 	peer "gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer"
 	host "gx/ipfs/QmcQTVCQWCN2MYgBHpFXE5S56rcg2mRsxaRgMYmA1UWgA8/go-libp2p/p2p/host"
 	inet "gx/ipfs/QmcQTVCQWCN2MYgBHpFXE5S56rcg2mRsxaRgMYmA1UWgA8/go-libp2p/p2p/net"

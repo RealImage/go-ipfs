@@ -1,9 +1,9 @@
 package testutil
 
 import (
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
-	syncds "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/sync"
-	ds2 "github.com/ipfs/go-ipfs/thirdparty/datastore2"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
+	syncds "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/sync"
+	ds2 "github.com/RealImage/go-ipfs/thirdparty/datastore2"
 )
 
 func ThreadSafeCloserMapDatastore() ds2.ThreadSafeDatastoreCloser {

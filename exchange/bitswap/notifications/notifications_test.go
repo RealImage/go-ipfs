@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	blocks "github.com/ipfs/go-ipfs/blocks"
-	blocksutil "github.com/ipfs/go-ipfs/blocks/blocksutil"
-	key "github.com/ipfs/go-ipfs/blocks/key"
+	blocks "github.com/RealImage/go-ipfs/blocks"
+	blocksutil "github.com/RealImage/go-ipfs/blocks/blocksutil"
+	key "github.com/RealImage/go-ipfs/blocks/key"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 )
 

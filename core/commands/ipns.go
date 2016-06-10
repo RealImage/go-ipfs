@@ -5,9 +5,9 @@ import (
 	"io"
 	"strings"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
-	namesys "github.com/ipfs/go-ipfs/namesys"
-	offline "github.com/ipfs/go-ipfs/routing/offline"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	namesys "github.com/RealImage/go-ipfs/namesys"
+	offline "github.com/RealImage/go-ipfs/routing/offline"
 	u "gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
 )
 

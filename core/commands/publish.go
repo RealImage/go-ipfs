@@ -9,10 +9,10 @@ import (
 
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	cmds "github.com/ipfs/go-ipfs/commands"
-	core "github.com/ipfs/go-ipfs/core"
-	path "github.com/ipfs/go-ipfs/path"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	core "github.com/RealImage/go-ipfs/core"
+	path "github.com/RealImage/go-ipfs/path"
 	crypto "gx/ipfs/QmUEUu1CM8bxBJxc3ZLojAi8evhTr4byQogWstABet79oY/go-libp2p-crypto"
 )
 

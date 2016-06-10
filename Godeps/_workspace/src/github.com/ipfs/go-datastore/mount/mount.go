@@ -7,9 +7,9 @@ import (
 	"io"
 	"strings"
 
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/keytransform"
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/query"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/keytransform"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/query"
 )
 
 var (

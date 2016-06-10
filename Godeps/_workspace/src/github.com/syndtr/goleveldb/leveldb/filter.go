@@ -7,7 +7,7 @@
 package leveldb
 
 import (
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/syndtr/goleveldb/leveldb/filter"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/syndtr/goleveldb/leveldb/filter"
 )
 
 type iFilter struct {

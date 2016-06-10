@@ -11,7 +11,7 @@ import (
 )
 
 import (
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/bazil.org/fuse"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/bazil.org/fuse"
 )
 
 // A Tree implements a basic read-only directory tree for FUSE.

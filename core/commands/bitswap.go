@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/dustin/go-humanize"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/dustin/go-humanize"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	cmds "github.com/ipfs/go-ipfs/commands"
-	bitswap "github.com/ipfs/go-ipfs/exchange/bitswap"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	bitswap "github.com/RealImage/go-ipfs/exchange/bitswap"
 	u "gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
 	peer "gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer"
 )

@@ -3,12 +3,12 @@ package corerouting
 import (
 	"errors"
 
-	ds "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
-	core "github.com/ipfs/go-ipfs/core"
-	repo "github.com/ipfs/go-ipfs/repo"
-	routing "github.com/ipfs/go-ipfs/routing"
-	supernode "github.com/ipfs/go-ipfs/routing/supernode"
-	gcproxy "github.com/ipfs/go-ipfs/routing/supernode/proxy"
+	ds "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
+	core "github.com/RealImage/go-ipfs/core"
+	repo "github.com/RealImage/go-ipfs/repo"
+	routing "github.com/RealImage/go-ipfs/routing"
+	supernode "github.com/RealImage/go-ipfs/routing/supernode"
+	gcproxy "github.com/RealImage/go-ipfs/routing/supernode/proxy"
 	"gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 	"gx/ipfs/QmcQTVCQWCN2MYgBHpFXE5S56rcg2mRsxaRgMYmA1UWgA8/go-libp2p/p2p/host"

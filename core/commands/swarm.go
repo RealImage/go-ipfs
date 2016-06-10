@@ -8,8 +8,8 @@ import (
 	"path"
 	"sort"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
-	iaddr "github.com/ipfs/go-ipfs/thirdparty/ipfsaddr"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	iaddr "github.com/RealImage/go-ipfs/thirdparty/ipfsaddr"
 	peer "gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer"
 	swarm "gx/ipfs/QmcQTVCQWCN2MYgBHpFXE5S56rcg2mRsxaRgMYmA1UWgA8/go-libp2p/p2p/net/swarm"
 

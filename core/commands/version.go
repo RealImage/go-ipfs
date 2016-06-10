@@ -5,9 +5,9 @@ import (
 	"io"
 	"strings"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
-	config "github.com/ipfs/go-ipfs/repo/config"
-	fsrepo "github.com/ipfs/go-ipfs/repo/fsrepo"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	config "github.com/RealImage/go-ipfs/repo/config"
+	fsrepo "github.com/RealImage/go-ipfs/repo/fsrepo"
 )
 
 type VersionOutput struct {

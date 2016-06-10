@@ -3,8 +3,8 @@ package decision
 import (
 	"time"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	wl "github.com/ipfs/go-ipfs/exchange/bitswap/wantlist"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	wl "github.com/RealImage/go-ipfs/exchange/bitswap/wantlist"
 	peer "gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer"
 )
 

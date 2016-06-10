@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	rtable "github.com/ipfs/go-ipfs/routing/kbucket"
+	rtable "github.com/RealImage/go-ipfs/routing/kbucket"
 	peer "gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer"
 )
 

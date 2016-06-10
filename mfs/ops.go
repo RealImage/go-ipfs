@@ -7,8 +7,8 @@ import (
 	gopath "path"
 	"strings"
 
-	dag "github.com/ipfs/go-ipfs/merkledag"
-	path "github.com/ipfs/go-ipfs/path"
+	dag "github.com/RealImage/go-ipfs/merkledag"
+	path "github.com/RealImage/go-ipfs/path"
 )
 
 // Mv moves the file or directory at 'src' to 'dst'

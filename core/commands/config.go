@@ -10,10 +10,10 @@ import (
 	"os"
 	"os/exec"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
-	repo "github.com/ipfs/go-ipfs/repo"
-	config "github.com/ipfs/go-ipfs/repo/config"
-	fsrepo "github.com/ipfs/go-ipfs/repo/fsrepo"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	repo "github.com/RealImage/go-ipfs/repo"
+	config "github.com/RealImage/go-ipfs/repo/config"
+	fsrepo "github.com/RealImage/go-ipfs/repo/fsrepo"
 	u "gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
 )
 

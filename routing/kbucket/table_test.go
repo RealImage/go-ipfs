@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	tu "github.com/ipfs/go-ipfs/thirdparty/testutil"
+	tu "github.com/RealImage/go-ipfs/thirdparty/testutil"
 
 	peer "gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer"
 )

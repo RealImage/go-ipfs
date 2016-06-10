@@ -9,17 +9,17 @@ import (
 	"fmt"
 	"os"
 
-	fuse "github.com/ipfs/go-ipfs/Godeps/_workspace/src/bazil.org/fuse"
-	fs "github.com/ipfs/go-ipfs/Godeps/_workspace/src/bazil.org/fuse/fs"
+	fuse "github.com/RealImage/go-ipfs/Godeps/_workspace/src/bazil.org/fuse"
+	fs "github.com/RealImage/go-ipfs/Godeps/_workspace/src/bazil.org/fuse/fs"
 	"gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 	logging "gx/ipfs/QmaDNZ4QMdBdku1YZWBysufYyoQt1negQGNav6PLYarbY8/go-log"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	core "github.com/ipfs/go-ipfs/core"
-	dag "github.com/ipfs/go-ipfs/merkledag"
-	mfs "github.com/ipfs/go-ipfs/mfs"
-	path "github.com/ipfs/go-ipfs/path"
-	ft "github.com/ipfs/go-ipfs/unixfs"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	core "github.com/RealImage/go-ipfs/core"
+	dag "github.com/RealImage/go-ipfs/merkledag"
+	mfs "github.com/RealImage/go-ipfs/mfs"
+	path "github.com/RealImage/go-ipfs/path"
+	ft "github.com/RealImage/go-ipfs/unixfs"
 	ci "gx/ipfs/QmUEUu1CM8bxBJxc3ZLojAi8evhTr4byQogWstABet79oY/go-libp2p-crypto"
 )
 

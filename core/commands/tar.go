@@ -4,11 +4,11 @@ import (
 	"io"
 	"strings"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
-	core "github.com/ipfs/go-ipfs/core"
-	"github.com/ipfs/go-ipfs/core/coreunix"
-	path "github.com/ipfs/go-ipfs/path"
-	tar "github.com/ipfs/go-ipfs/tar"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	core "github.com/RealImage/go-ipfs/core"
+	"github.com/RealImage/go-ipfs/core/coreunix"
+	path "github.com/RealImage/go-ipfs/path"
+	tar "github.com/RealImage/go-ipfs/tar"
 )
 
 var TarCmd = &cmds.Command{

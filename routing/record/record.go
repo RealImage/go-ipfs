@@ -5,8 +5,8 @@ import (
 
 	proto "gx/ipfs/QmZ4Qi3GaRbjcx28Sme5eMH7RQjGkt8wHxt2a65oLaeFEV/gogo-protobuf/proto"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	pb "github.com/ipfs/go-ipfs/routing/dht/pb"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	pb "github.com/RealImage/go-ipfs/routing/dht/pb"
 	ci "gx/ipfs/QmUEUu1CM8bxBJxc3ZLojAi8evhTr4byQogWstABet79oY/go-libp2p-crypto"
 	logging "gx/ipfs/QmaDNZ4QMdBdku1YZWBysufYyoQt1negQGNav6PLYarbY8/go-log"
 )

@@ -7,10 +7,10 @@ import (
 	"sync"
 	"time"
 
-	ds "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	"github.com/ipfs/go-ipfs/blocks/set"
-	mdag "github.com/ipfs/go-ipfs/merkledag"
+	ds "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	"github.com/RealImage/go-ipfs/blocks/set"
+	mdag "github.com/RealImage/go-ipfs/merkledag"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 	logging "gx/ipfs/QmaDNZ4QMdBdku1YZWBysufYyoQt1negQGNav6PLYarbY8/go-log"
 )

@@ -6,10 +6,10 @@ import (
 
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	merkledag "github.com/ipfs/go-ipfs/merkledag"
-	dagmock "github.com/ipfs/go-ipfs/merkledag/test"
-	path "github.com/ipfs/go-ipfs/path"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	merkledag "github.com/RealImage/go-ipfs/merkledag"
+	dagmock "github.com/RealImage/go-ipfs/merkledag/test"
+	path "github.com/RealImage/go-ipfs/path"
 	util "gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
 )
 

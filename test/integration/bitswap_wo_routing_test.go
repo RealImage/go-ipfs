@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/ipfs/go-ipfs/blocks"
-	"github.com/ipfs/go-ipfs/core"
-	"github.com/ipfs/go-ipfs/core/mock"
+	"github.com/RealImage/go-ipfs/blocks"
+	"github.com/RealImage/go-ipfs/core"
+	"github.com/RealImage/go-ipfs/core/mock"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 	mocknet "gx/ipfs/QmcQTVCQWCN2MYgBHpFXE5S56rcg2mRsxaRgMYmA1UWgA8/go-libp2p/p2p/net/mock"
 )

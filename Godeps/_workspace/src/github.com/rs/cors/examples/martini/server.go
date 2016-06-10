@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/go-martini/martini"
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/rs/cors"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/rs/cors"
 	"github.com/martini-contrib/render"
 )
 

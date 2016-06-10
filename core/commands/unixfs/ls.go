@@ -7,12 +7,12 @@ import (
 	"sort"
 	"text/tabwriter"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
-	core "github.com/ipfs/go-ipfs/core"
-	path "github.com/ipfs/go-ipfs/path"
-	unixfs "github.com/ipfs/go-ipfs/unixfs"
-	unixfspb "github.com/ipfs/go-ipfs/unixfs/pb"
-	merkledag "github.com/ipfs/go-ipfs/merkledag"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	core "github.com/RealImage/go-ipfs/core"
+	path "github.com/RealImage/go-ipfs/path"
+	unixfs "github.com/RealImage/go-ipfs/unixfs"
+	unixfspb "github.com/RealImage/go-ipfs/unixfs/pb"
+	merkledag "github.com/RealImage/go-ipfs/merkledag"
 )
 
 type LsLink struct {

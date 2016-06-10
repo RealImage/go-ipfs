@@ -2,7 +2,7 @@ package osrename_test
 
 import (
 	"bytes"
-	rn "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/jbenet/go-os-rename"
+	rn "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/jbenet/go-os-rename"
 	"io/ioutil"
 	"os"
 	"testing"

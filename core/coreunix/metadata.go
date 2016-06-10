@@ -1,10 +1,10 @@
 package coreunix
 
 import (
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	core "github.com/ipfs/go-ipfs/core"
-	dag "github.com/ipfs/go-ipfs/merkledag"
-	ft "github.com/ipfs/go-ipfs/unixfs"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	core "github.com/RealImage/go-ipfs/core"
+	dag "github.com/RealImage/go-ipfs/merkledag"
+	ft "github.com/RealImage/go-ipfs/unixfs"
 )
 
 func AddMetadataTo(n *core.IpfsNode, skey string, m *ft.Metadata) (string, error) {

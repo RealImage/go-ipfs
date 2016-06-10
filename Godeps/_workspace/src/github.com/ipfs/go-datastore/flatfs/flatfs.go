@@ -13,9 +13,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/query"
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/jbenet/go-os-rename"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/query"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/jbenet/go-os-rename"
 
 	logging "gx/ipfs/QmaDNZ4QMdBdku1YZWBysufYyoQt1negQGNav6PLYarbY8/go-log"
 )

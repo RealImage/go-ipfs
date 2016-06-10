@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ipfs/go-ipfs/commands/files"
-	"github.com/ipfs/go-ipfs/core"
-	"github.com/ipfs/go-ipfs/repo/config"
+	"github.com/RealImage/go-ipfs/commands/files"
+	"github.com/RealImage/go-ipfs/core"
+	"github.com/RealImage/go-ipfs/repo/config"
 	u "gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 )

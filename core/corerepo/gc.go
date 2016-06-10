@@ -4,11 +4,11 @@ import (
 	"errors"
 	"time"
 
-	humanize "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/dustin/go-humanize"
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	"github.com/ipfs/go-ipfs/core"
-	gc "github.com/ipfs/go-ipfs/pin/gc"
-	repo "github.com/ipfs/go-ipfs/repo"
+	humanize "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/dustin/go-humanize"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	"github.com/RealImage/go-ipfs/core"
+	gc "github.com/RealImage/go-ipfs/pin/gc"
+	repo "github.com/RealImage/go-ipfs/repo"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 	logging "gx/ipfs/QmaDNZ4QMdBdku1YZWBysufYyoQt1negQGNav6PLYarbY8/go-log"
 )

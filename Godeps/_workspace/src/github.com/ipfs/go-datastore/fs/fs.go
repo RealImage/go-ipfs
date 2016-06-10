@@ -24,8 +24,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	ds "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
-	query "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/query"
+	ds "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
+	query "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/query"
 )
 
 var ObjectKeySuffix = ".dsobject"

@@ -11,10 +11,10 @@ import (
 	host "gx/ipfs/QmcQTVCQWCN2MYgBHpFXE5S56rcg2mRsxaRgMYmA1UWgA8/go-libp2p/p2p/host"
 	inet "gx/ipfs/QmcQTVCQWCN2MYgBHpFXE5S56rcg2mRsxaRgMYmA1UWgA8/go-libp2p/p2p/net"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	dhtpb "github.com/ipfs/go-ipfs/routing/dht/pb"
-	kbucket "github.com/ipfs/go-ipfs/routing/kbucket"
-	loggables "github.com/ipfs/go-ipfs/thirdparty/loggables"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	dhtpb "github.com/RealImage/go-ipfs/routing/dht/pb"
+	kbucket "github.com/RealImage/go-ipfs/routing/kbucket"
+	loggables "github.com/RealImage/go-ipfs/thirdparty/loggables"
 )
 
 const ProtocolSNR = "/ipfs/supernoderouting"

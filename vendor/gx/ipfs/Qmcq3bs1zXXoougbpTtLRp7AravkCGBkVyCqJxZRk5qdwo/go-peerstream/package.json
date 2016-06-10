@@ -1,0 +1,26 @@
+{
+  "author": "whyrusleeping",
+  "bugs": {},
+  "gx": {
+    "dvcsimport": "github.com/jbenet/go-peerstream"
+  },
+  "gxDependencies": [
+    {
+      "hash": "QmWo4w5EybXUjBn9L7nsBneEPcLArq6fDMBWEFJ2Qny6Eq",
+      "name": "go-stream-muxer",
+      "version": "0.0.0"
+    },
+    {
+      "hash": "QmWHgLqrghM9zw77nF6gdvT9ExQ2RB9pLxkd8sDHZf1rWb",
+      "name": "go-temp-err-catcher",
+      "version": "0.0.0"
+    }
+  ],
+  "gxVersion": "0.7.0",
+  "gx_version": "0.4.0",
+  "issues_url": "",
+  "language": "go",
+  "license": "",
+  "name": "go-peerstream",
+  "version": "0.0.0"
+}

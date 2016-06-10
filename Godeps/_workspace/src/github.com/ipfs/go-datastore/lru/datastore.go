@@ -3,10 +3,10 @@ package lru
 import (
 	"errors"
 
-	lru "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/hashicorp/golang-lru"
+	lru "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/hashicorp/golang-lru"
 
-	ds "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
-	dsq "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/query"
+	ds "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
+	dsq "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/query"
 )
 
 // Datastore uses golang-lru for internal storage.

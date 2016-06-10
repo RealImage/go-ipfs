@@ -6,9 +6,9 @@ import (
 	"net/url"
 	"testing"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
-	ipfscmd "github.com/ipfs/go-ipfs/core/commands"
-	coremock "github.com/ipfs/go-ipfs/core/mock"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	ipfscmd "github.com/RealImage/go-ipfs/core/commands"
+	coremock "github.com/RealImage/go-ipfs/core/mock"
 )
 
 func assertHeaders(t *testing.T, resHeaders http.Header, reqHeaders map[string]string) {

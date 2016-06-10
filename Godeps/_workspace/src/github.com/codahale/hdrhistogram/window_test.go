@@ -3,7 +3,7 @@ package hdrhistogram_test
 import (
 	"testing"
 
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/codahale/hdrhistogram"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/codahale/hdrhistogram"
 )
 
 func TestWindowedHistogram(t *testing.T) {

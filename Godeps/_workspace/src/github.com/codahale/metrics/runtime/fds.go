@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"syscall"
 
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/codahale/metrics"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/codahale/metrics"
 )
 
 func getFDLimit() (uint64, error) {

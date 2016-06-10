@@ -7,11 +7,11 @@ import (
 	"io"
 	"time"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	cmds "github.com/ipfs/go-ipfs/commands"
-	notif "github.com/ipfs/go-ipfs/notifications"
-	path "github.com/ipfs/go-ipfs/path"
-	ipdht "github.com/ipfs/go-ipfs/routing/dht"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	notif "github.com/RealImage/go-ipfs/notifications"
+	path "github.com/RealImage/go-ipfs/path"
+	ipdht "github.com/RealImage/go-ipfs/routing/dht"
 	u "gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
 	peer "gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer"
 )

@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"sync"
 
-	core "github.com/ipfs/go-ipfs/core"
-	config "github.com/ipfs/go-ipfs/repo/config"
+	core "github.com/RealImage/go-ipfs/core"
+	config "github.com/RealImage/go-ipfs/repo/config"
 	id "gx/ipfs/QmcQTVCQWCN2MYgBHpFXE5S56rcg2mRsxaRgMYmA1UWgA8/go-libp2p/p2p/protocol/identify"
 )
 

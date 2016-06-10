@@ -4,12 +4,12 @@ import (
 	"sync"
 	"testing"
 
-	blocks "github.com/ipfs/go-ipfs/blocks"
-	bsmsg "github.com/ipfs/go-ipfs/exchange/bitswap/message"
-	bsnet "github.com/ipfs/go-ipfs/exchange/bitswap/network"
-	mockrouting "github.com/ipfs/go-ipfs/routing/mock"
-	delay "github.com/ipfs/go-ipfs/thirdparty/delay"
-	testutil "github.com/ipfs/go-ipfs/thirdparty/testutil"
+	blocks "github.com/RealImage/go-ipfs/blocks"
+	bsmsg "github.com/RealImage/go-ipfs/exchange/bitswap/message"
+	bsnet "github.com/RealImage/go-ipfs/exchange/bitswap/network"
+	mockrouting "github.com/RealImage/go-ipfs/routing/mock"
+	delay "github.com/RealImage/go-ipfs/thirdparty/delay"
+	testutil "github.com/RealImage/go-ipfs/thirdparty/testutil"
 	peer "gx/ipfs/QmZpD74pUj6vuxTp1o6LhA3JavC2Bvh9fsWPPVvHnD9sE7/go-libp2p-peer"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 )

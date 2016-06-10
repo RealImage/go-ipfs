@@ -18,8 +18,8 @@ import (
 )
 
 import (
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/bazil.org/fuse"
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/bazil.org/fuse/fuseutil"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/bazil.org/fuse"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/bazil.org/fuse/fuseutil"
 )
 
 const (

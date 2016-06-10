@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"path"
 
-	ds "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/flatfs"
-	levelds "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/leveldb"
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/measure"
-	mount "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/syncmount"
-	ldbopts "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/syndtr/goleveldb/leveldb/opt"
-	repo "github.com/ipfs/go-ipfs/repo"
-	config "github.com/ipfs/go-ipfs/repo/config"
-	"github.com/ipfs/go-ipfs/thirdparty/dir"
+	ds "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/flatfs"
+	levelds "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/leveldb"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/measure"
+	mount "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/syncmount"
+	ldbopts "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/syndtr/goleveldb/leveldb/opt"
+	repo "github.com/RealImage/go-ipfs/repo"
+	config "github.com/RealImage/go-ipfs/repo/config"
+	"github.com/RealImage/go-ipfs/thirdparty/dir"
 )
 
 const (
