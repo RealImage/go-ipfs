@@ -25,7 +25,7 @@ var (
 )
 
 // IsThinWaist returns whether a Multiaddr starts with "Thin Waist" Protocols.
-// This means: /{IP4, IP6}[/{TCP, UDP}]
+// This means: /{DNS, IP4, IP6}[/{TCP, UDP}]
 func IsThinWaist(m ma.Multiaddr) bool {
 	p := m.Protocols()
 
@@ -34,7 +34,7 @@ func IsThinWaist(m ma.Multiaddr) bool {
 		return false
 	}
 
-	if p[0].Code != ma.P_IP4 && p[0].Code != ma.P_IP6 {
+	if p[0].Code != ma.P_IP4 && p[0].Code != ma.P_IP6 && p[0].Code != ma.P_DNS {
 		return false
 	}
 

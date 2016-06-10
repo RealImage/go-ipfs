@@ -113,6 +113,7 @@ func TestThinWaist(t *testing.T) {
 		"/tcp/1234/udp/1234":                   false,
 		"/ip4/1.2.3.4/ip4/2.3.4.5":             true,
 		"/ip6/::1/ip4/2.3.4.5":                 true,
+		"/dns/www.google.com/ip4/tcp/80":       true,
 	}
 
 	for a, res := range addrs {
@@ -154,4 +155,5 @@ func TestDialArgs(t *testing.T) {
 	test("/ip6/::1/udp/1234", "udp6", "[::1]:1234")
 	test("/ip6/::1/tcp/4321", "tcp6", "[::1]:4321")
 	test("/ip6/::1/udp/1234/utp", "utp6", "[::1]:1234")
+	test("/dns/www.google.com/ip4/tcp/80", "tcp4", "www.google.com:80")
 }

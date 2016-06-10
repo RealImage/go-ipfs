@@ -154,6 +154,10 @@ func DialArgs(m ma.Multiaddr) (string, string, error) {
 		return parts[0], parts[1], nil
 	}
 
+	if parts[0] == "dns" {
+		parts = append([]string{parts[2], parts[1]}, parts[3:]...)
+	}
+
 	network := parts[2]
 	if parts[2] == "udp" && len(parts) > 4 && parts[4] == "utp" {
 		network = parts[4]

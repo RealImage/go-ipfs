@@ -124,6 +124,8 @@ func (d *Dialer) Dial(remote ma.Multiaddr) (Conn, error) {
 		if err != nil {
 			return nil, err
 		}
+
+	case "dns":
 	}
 
 	// get local address (pre-specified or assigned within net.Conn)

@@ -505,3 +505,12 @@ func testSliceEqual(t *testing.T, a, b []ma.Multiaddr) {
 		}
 	}
 }
+
+func TestDNSDial(t *testing.T) {
+	maddr := newMultiaddr(t, "/dns/www.google.com/ip4/tcp/80")
+	conn, err := Dial(maddr)
+	if err != nil {
+		t.Fatal("failed to dial")
+	}
+	conn.Close()
+}
