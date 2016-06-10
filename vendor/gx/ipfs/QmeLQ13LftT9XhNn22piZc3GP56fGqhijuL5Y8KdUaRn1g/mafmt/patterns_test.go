@@ -41,31 +41,41 @@ func TestBasicMatching(t *testing.T) {
 	good_ip := []string{
 		"/ip4/0.0.0.0",
 		"/ip6/fc00::",
+		"/dns/ipfs.io/ip4",
+		"/dns/ipfs.io/ip6",
 	}
 
 	bad_ip := []string{
 		"/ip4/0.0.0.0/tcp/555",
 		"/udp/789/ip6/fc00::",
+		"/dns/ipfs.io/ip4/tcp/555",
+		"/dns/ipfs.io/ip4/udp/555",
 	}
 
 	good_tcp := []string{
 		"/ip4/0.0.7.6/tcp/1234",
 		"/ip6/::/tcp/0",
+		"/dns/ipfs.io/ip4/tcp/1234",
+		"/dns/ipfs.io/ip6/tcp/0",
 	}
 
 	bad_tcp := []string{
 		"/tcp/12345",
 		"/ip6/fc00::/udp/5523/tcp/9543",
+		"/dns/ipfs.io/ip6/udp/5523/tcp/9543",
 	}
 
 	good_udp := []string{
 		"/ip4/0.0.7.6/udp/1234",
 		"/ip6/::/udp/0",
+		"/dns/ipfs.io/ip4/udp/1234",
+		"/dns/ipfs.io/ip6/udp/0",
 	}
 
 	bad_udp := []string{
 		"/udp/12345",
 		"/ip6/fc00::/tcp/5523/udp/9543",
+		"/dns/ipfs.io/ip6/tcp/5523/udp/9543",
 	}
 
 	good_utp := []string{

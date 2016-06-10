@@ -6,8 +6,8 @@ import (
 	ma "gx/ipfs/QmYzDkkgAEmrcNzFCiYo6L1dTX4EAG1gZkbtdbd9trL4vd/go-multiaddr"
 )
 
-// Define IP as either ipv4 or ipv6
-var IP = Or(Base(ma.P_IP4), Base(ma.P_IP6))
+// Define IP as either ipv4, ipv6 or DNS
+var IP = Or(Base(ma.P_IP4), Base(ma.P_IP6), Base(ma.P_DNS))
 
 // Define TCP as 'tcp' on top of either ipv4 or ipv6
 var TCP = And(IP, Base(ma.P_TCP))
