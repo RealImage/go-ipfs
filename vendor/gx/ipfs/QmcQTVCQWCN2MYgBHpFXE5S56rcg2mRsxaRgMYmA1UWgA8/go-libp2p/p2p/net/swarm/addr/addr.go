@@ -21,6 +21,7 @@ var SupportedTransportStrings = []string{
 	"/ip6/udp/utp",
 	// "/ip4/udp/udt", disabled because the lib doesnt work on arm
 	// "/ip6/udp/udt", disabled because the lib doesnt work on arm
+	"/dns/tcp",
 }
 
 // SupportedTransportProtocols is the list of supported transports for the swarm.

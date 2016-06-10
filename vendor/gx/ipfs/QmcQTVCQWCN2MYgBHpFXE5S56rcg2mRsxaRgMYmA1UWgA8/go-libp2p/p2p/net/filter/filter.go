@@ -26,6 +26,10 @@ func (fs *Filters) AddDialFilter(f *net.IPNet) {
 }
 
 func (f *Filters) AddrBlocked(a ma.Multiaddr) bool {
+	p := a.Protocols()
+	if p[0].Code == ma.P_DNS {
+		return false
+	}
 	maddr := ma.Split(a)
 	if len(maddr) == 0 {
 		return false
