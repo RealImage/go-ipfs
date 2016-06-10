@@ -150,12 +150,12 @@ func DialArgs(m ma.Multiaddr) (string, string, error) {
 	str := m.String()
 	parts := strings.Split(str, "/")[1:]
 
-	if len(parts) == 2 { // only IP
-		return parts[0], parts[1], nil
-	}
-
 	if parts[0] == "dns" {
 		parts = append([]string{parts[2], parts[1]}, parts[3:]...)
+	}
+
+	if len(parts) == 2 { // only IP or DNS
+		return parts[0], parts[1], nil
 	}
 
 	network := parts[2]

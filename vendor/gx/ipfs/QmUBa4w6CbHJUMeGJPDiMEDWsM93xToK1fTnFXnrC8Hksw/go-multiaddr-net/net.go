@@ -109,7 +109,7 @@ func (d *Dialer) Dial(remote ma.Multiaddr) (Conn, error) {
 	// ok, Dial!
 	var nconn net.Conn
 	switch rnet {
-	case "tcp", "tcp4", "tcp6", "udp", "udp4", "udp6":
+	case "tcp", "tcp4", "tcp6", "udp", "udp4", "udp6", "ip4", "ip6":
 		nconn, err = d.Dialer.Dial(rnet, rnaddr)
 		if err != nil {
 			return nil, err
@@ -124,8 +124,6 @@ func (d *Dialer) Dial(remote ma.Multiaddr) (Conn, error) {
 		if err != nil {
 			return nil, err
 		}
-
-	case "dns":
 	}
 
 	// get local address (pre-specified or assigned within net.Conn)
