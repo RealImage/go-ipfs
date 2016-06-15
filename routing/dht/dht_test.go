@@ -9,20 +9,20 @@ import (
 	"testing"
 	"time"
 
-	ds "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
-	dssync "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/sync"
+	ds "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
+	dssync "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/sync"
 	ma "gx/ipfs/QmYzDkkgAEmrcNzFCiYo6L1dTX4EAG1gZkbtdbd9trL4vd/go-multiaddr"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	routing "github.com/ipfs/go-ipfs/routing"
-	record "github.com/ipfs/go-ipfs/routing/record"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	routing "github.com/RealImage/go-ipfs/routing"
+	record "github.com/RealImage/go-ipfs/routing/record"
 	netutil "gx/ipfs/QmVL44QeoQDTYK8RVdpkyja7uYcK3WDNoBNHVLonf9YDtm/go-libp2p/p2p/test/util"
 	u "gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
 	peer "gx/ipfs/QmbyvM8zRFDkbFdYyt1MnevUMJ62SiSGbfDFZ3Z8nkrzr4/go-libp2p-peer"
 
-	ci "github.com/ipfs/go-ipfs/thirdparty/testutil/ci"
-	travisci "github.com/ipfs/go-ipfs/thirdparty/testutil/ci/travis"
+	ci "github.com/RealImage/go-ipfs/thirdparty/testutil/ci"
+	travisci "github.com/RealImage/go-ipfs/thirdparty/testutil/ci/travis"
 )
 
 var testCaseValues = map[key.Key][]byte{}

@@ -8,8 +8,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/facebookgo/atomicfile"
-	"github.com/ipfs/go-ipfs/repo/config"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/facebookgo/atomicfile"
+	"github.com/RealImage/go-ipfs/repo/config"
 	"gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
 	logging "gx/ipfs/QmaDNZ4QMdBdku1YZWBysufYyoQt1negQGNav6PLYarbY8/go-log"
 )

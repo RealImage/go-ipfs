@@ -3,8 +3,8 @@ package chunk
 import (
 	"bytes"
 	"fmt"
-	"github.com/ipfs/go-ipfs/blocks"
-	"github.com/ipfs/go-ipfs/blocks/key"
+	"github.com/RealImage/go-ipfs/blocks"
+	"github.com/RealImage/go-ipfs/blocks/key"
 	"gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
 	"io"
 	"testing"

@@ -4,14 +4,14 @@ import (
 	"errors"
 	"fmt"
 
-	datastore "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
+	datastore "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
 	proto "gx/ipfs/QmZ4Qi3GaRbjcx28Sme5eMH7RQjGkt8wHxt2a65oLaeFEV/gogo-protobuf/proto"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	dhtpb "github.com/ipfs/go-ipfs/routing/dht/pb"
-	record "github.com/ipfs/go-ipfs/routing/record"
-	proxy "github.com/ipfs/go-ipfs/routing/supernode/proxy"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	dhtpb "github.com/RealImage/go-ipfs/routing/dht/pb"
+	record "github.com/RealImage/go-ipfs/routing/record"
+	proxy "github.com/RealImage/go-ipfs/routing/supernode/proxy"
 	peer "gx/ipfs/QmbyvM8zRFDkbFdYyt1MnevUMJ62SiSGbfDFZ3Z8nkrzr4/go-libp2p-peer"
 )
 

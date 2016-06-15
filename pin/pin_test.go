@@ -6,13 +6,13 @@ import (
 
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 
-	ds "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
-	dssync "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/sync"
-	"github.com/ipfs/go-ipfs/blocks/blockstore"
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	bs "github.com/ipfs/go-ipfs/blockservice"
-	"github.com/ipfs/go-ipfs/exchange/offline"
-	mdag "github.com/ipfs/go-ipfs/merkledag"
+	ds "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
+	dssync "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/sync"
+	"github.com/RealImage/go-ipfs/blocks/blockstore"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	bs "github.com/RealImage/go-ipfs/blockservice"
+	"github.com/RealImage/go-ipfs/exchange/offline"
+	mdag "github.com/RealImage/go-ipfs/merkledag"
 	"gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
 )
 

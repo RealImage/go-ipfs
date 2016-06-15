@@ -6,7 +6,7 @@ import (
 
 	"gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 
-	mdag "github.com/ipfs/go-ipfs/merkledag"
+	mdag "github.com/RealImage/go-ipfs/merkledag"
 )
 
 // Order is an identifier for traversal algorithm orders

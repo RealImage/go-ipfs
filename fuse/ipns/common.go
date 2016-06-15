@@ -3,11 +3,11 @@ package ipns
 import (
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 
-	"github.com/ipfs/go-ipfs/core"
-	mdag "github.com/ipfs/go-ipfs/merkledag"
-	nsys "github.com/ipfs/go-ipfs/namesys"
-	path "github.com/ipfs/go-ipfs/path"
-	ft "github.com/ipfs/go-ipfs/unixfs"
+	"github.com/RealImage/go-ipfs/core"
+	mdag "github.com/RealImage/go-ipfs/merkledag"
+	nsys "github.com/RealImage/go-ipfs/namesys"
+	path "github.com/RealImage/go-ipfs/path"
+	ft "github.com/RealImage/go-ipfs/unixfs"
 	ci "gx/ipfs/QmUEUu1CM8bxBJxc3ZLojAi8evhTr4byQogWstABet79oY/go-libp2p-crypto"
 )
 

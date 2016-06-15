@@ -10,11 +10,11 @@ import (
 
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 
-	core "github.com/ipfs/go-ipfs/core"
-	coreunix "github.com/ipfs/go-ipfs/core/coreunix"
-	mock "github.com/ipfs/go-ipfs/core/mock"
-	testutil "github.com/ipfs/go-ipfs/thirdparty/testutil"
-	"github.com/ipfs/go-ipfs/thirdparty/unit"
+	core "github.com/RealImage/go-ipfs/core"
+	coreunix "github.com/RealImage/go-ipfs/core/coreunix"
+	mock "github.com/RealImage/go-ipfs/core/mock"
+	testutil "github.com/RealImage/go-ipfs/thirdparty/testutil"
+	"github.com/RealImage/go-ipfs/thirdparty/unit"
 	mocknet "gx/ipfs/QmVL44QeoQDTYK8RVdpkyja7uYcK3WDNoBNHVLonf9YDtm/go-libp2p/p2p/net/mock"
 	"gx/ipfs/QmbyvM8zRFDkbFdYyt1MnevUMJ62SiSGbfDFZ3Z8nkrzr4/go-libp2p-peer"
 )

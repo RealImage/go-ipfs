@@ -13,17 +13,17 @@ import (
 	"sync"
 	"testing"
 
-	fstest "github.com/ipfs/go-ipfs/Godeps/_workspace/src/bazil.org/fuse/fs/fstestutil"
+	fstest "github.com/RealImage/go-ipfs/Godeps/_workspace/src/bazil.org/fuse/fs/fstestutil"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	core "github.com/ipfs/go-ipfs/core"
-	coreunix "github.com/ipfs/go-ipfs/core/coreunix"
-	coremock "github.com/ipfs/go-ipfs/core/mock"
-	importer "github.com/ipfs/go-ipfs/importer"
-	chunk "github.com/ipfs/go-ipfs/importer/chunk"
-	dag "github.com/ipfs/go-ipfs/merkledag"
-	ci "github.com/ipfs/go-ipfs/thirdparty/testutil/ci"
-	uio "github.com/ipfs/go-ipfs/unixfs/io"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	core "github.com/RealImage/go-ipfs/core"
+	coreunix "github.com/RealImage/go-ipfs/core/coreunix"
+	coremock "github.com/RealImage/go-ipfs/core/mock"
+	importer "github.com/RealImage/go-ipfs/importer"
+	chunk "github.com/RealImage/go-ipfs/importer/chunk"
+	dag "github.com/RealImage/go-ipfs/merkledag"
+	ci "github.com/RealImage/go-ipfs/thirdparty/testutil/ci"
+	uio "github.com/RealImage/go-ipfs/unixfs/io"
 	u "gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
 )
 

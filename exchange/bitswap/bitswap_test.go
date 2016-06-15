@@ -6,17 +6,17 @@ import (
 	"testing"
 	"time"
 
-	detectrace "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/jbenet/go-detect-race"
-	travis "github.com/ipfs/go-ipfs/thirdparty/testutil/ci/travis"
+	detectrace "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/jbenet/go-detect-race"
+	travis "github.com/RealImage/go-ipfs/thirdparty/testutil/ci/travis"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 
-	blocks "github.com/ipfs/go-ipfs/blocks"
-	blockstore "github.com/ipfs/go-ipfs/blocks/blockstore"
-	blocksutil "github.com/ipfs/go-ipfs/blocks/blocksutil"
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	tn "github.com/ipfs/go-ipfs/exchange/bitswap/testnet"
-	mockrouting "github.com/ipfs/go-ipfs/routing/mock"
-	delay "github.com/ipfs/go-ipfs/thirdparty/delay"
+	blocks "github.com/RealImage/go-ipfs/blocks"
+	blockstore "github.com/RealImage/go-ipfs/blocks/blockstore"
+	blocksutil "github.com/RealImage/go-ipfs/blocks/blocksutil"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	tn "github.com/RealImage/go-ipfs/exchange/bitswap/testnet"
+	mockrouting "github.com/RealImage/go-ipfs/routing/mock"
+	delay "github.com/RealImage/go-ipfs/thirdparty/delay"
 	p2ptestutil "gx/ipfs/QmVL44QeoQDTYK8RVdpkyja7uYcK3WDNoBNHVLonf9YDtm/go-libp2p/p2p/test/util"
 )
 

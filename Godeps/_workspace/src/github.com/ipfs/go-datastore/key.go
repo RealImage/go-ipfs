@@ -4,9 +4,9 @@ import (
 	"path"
 	"strings"
 
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/satori/go.uuid"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/satori/go.uuid"
 
-	dsq "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/query"
+	dsq "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/query"
 )
 
 /*

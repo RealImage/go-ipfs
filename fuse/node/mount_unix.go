@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
-	core "github.com/ipfs/go-ipfs/core"
-	ipns "github.com/ipfs/go-ipfs/fuse/ipns"
-	mount "github.com/ipfs/go-ipfs/fuse/mount"
-	rofs "github.com/ipfs/go-ipfs/fuse/readonly"
+	core "github.com/RealImage/go-ipfs/core"
+	ipns "github.com/RealImage/go-ipfs/fuse/ipns"
+	mount "github.com/RealImage/go-ipfs/fuse/mount"
+	rofs "github.com/RealImage/go-ipfs/fuse/readonly"
 	logging "gx/ipfs/QmaDNZ4QMdBdku1YZWBysufYyoQt1negQGNav6PLYarbY8/go-log"
 )
 

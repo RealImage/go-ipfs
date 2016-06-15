@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/codegangsta/negroni"
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/rs/cors"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/rs/cors"
 )
 
 func main() {

@@ -1,12 +1,12 @@
 package gc
 
 import (
-	bstore "github.com/ipfs/go-ipfs/blocks/blockstore"
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	bserv "github.com/ipfs/go-ipfs/blockservice"
-	offline "github.com/ipfs/go-ipfs/exchange/offline"
-	dag "github.com/ipfs/go-ipfs/merkledag"
-	pin "github.com/ipfs/go-ipfs/pin"
+	bstore "github.com/RealImage/go-ipfs/blocks/blockstore"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	bserv "github.com/RealImage/go-ipfs/blockservice"
+	offline "github.com/RealImage/go-ipfs/exchange/offline"
+	dag "github.com/RealImage/go-ipfs/merkledag"
+	pin "github.com/RealImage/go-ipfs/pin"
 
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 	logging "gx/ipfs/QmaDNZ4QMdBdku1YZWBysufYyoQt1negQGNav6PLYarbY8/go-log"

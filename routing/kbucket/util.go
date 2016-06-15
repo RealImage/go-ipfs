@@ -5,8 +5,8 @@ import (
 	"crypto/sha256"
 	"errors"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	ks "github.com/ipfs/go-ipfs/routing/keyspace"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	ks "github.com/RealImage/go-ipfs/routing/keyspace"
 	u "gx/ipfs/QmZNVWh8LLjAavuQ2JXuFmuYH3C11xo988vSgp7UQrTRj1/go-ipfs-util"
 	peer "gx/ipfs/QmbyvM8zRFDkbFdYyt1MnevUMJ62SiSGbfDFZ3Z8nkrzr4/go-libp2p-peer"
 )

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	ds "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
-	ktds "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/keytransform"
-	dsq "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/query"
+	ds "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
+	ktds "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/keytransform"
+	dsq "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/query"
 )
 
 // PrefixTransform constructs a KeyTransform with a pair of functions that

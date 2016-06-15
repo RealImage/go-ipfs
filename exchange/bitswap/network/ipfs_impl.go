@@ -1,9 +1,9 @@
 package network
 
 import (
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	bsmsg "github.com/ipfs/go-ipfs/exchange/bitswap/message"
-	routing "github.com/ipfs/go-ipfs/routing"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	bsmsg "github.com/RealImage/go-ipfs/exchange/bitswap/message"
+	routing "github.com/RealImage/go-ipfs/routing"
 	host "gx/ipfs/QmVL44QeoQDTYK8RVdpkyja7uYcK3WDNoBNHVLonf9YDtm/go-libp2p/p2p/host"
 	inet "gx/ipfs/QmVL44QeoQDTYK8RVdpkyja7uYcK3WDNoBNHVLonf9YDtm/go-libp2p/p2p/net"
 	ma "gx/ipfs/QmYzDkkgAEmrcNzFCiYo6L1dTX4EAG1gZkbtdbd9trL4vd/go-multiaddr"

@@ -11,9 +11,9 @@ import (
 	"sort"
 	"unsafe"
 
-	"github.com/ipfs/go-ipfs/blocks/key"
-	"github.com/ipfs/go-ipfs/merkledag"
-	"github.com/ipfs/go-ipfs/pin/internal/pb"
+	"github.com/RealImage/go-ipfs/blocks/key"
+	"github.com/RealImage/go-ipfs/merkledag"
+	"github.com/RealImage/go-ipfs/pin/internal/pb"
 	"gx/ipfs/QmZ4Qi3GaRbjcx28Sme5eMH7RQjGkt8wHxt2a65oLaeFEV/gogo-protobuf/proto"
 	"gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 )

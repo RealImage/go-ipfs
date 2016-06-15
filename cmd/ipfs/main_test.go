@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/ipfs/go-ipfs/commands"
+	"github.com/RealImage/go-ipfs/commands"
 )
 
 func TestIsCientErr(t *testing.T) {

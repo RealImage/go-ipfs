@@ -12,11 +12,11 @@ import (
 	logging "gx/ipfs/QmaDNZ4QMdBdku1YZWBysufYyoQt1negQGNav6PLYarbY8/go-log"
 	peer "gx/ipfs/QmbyvM8zRFDkbFdYyt1MnevUMJ62SiSGbfDFZ3Z8nkrzr4/go-libp2p-peer"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	routing "github.com/ipfs/go-ipfs/routing"
-	pb "github.com/ipfs/go-ipfs/routing/dht/pb"
-	proxy "github.com/ipfs/go-ipfs/routing/supernode/proxy"
-	loggables "github.com/ipfs/go-ipfs/thirdparty/loggables"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	routing "github.com/RealImage/go-ipfs/routing"
+	pb "github.com/RealImage/go-ipfs/routing/dht/pb"
+	proxy "github.com/RealImage/go-ipfs/routing/supernode/proxy"
+	loggables "github.com/RealImage/go-ipfs/thirdparty/loggables"
 )
 
 var log = logging.Logger("supernode")

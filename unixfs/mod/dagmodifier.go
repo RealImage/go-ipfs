@@ -10,13 +10,13 @@ import (
 	proto "gx/ipfs/QmZ4Qi3GaRbjcx28Sme5eMH7RQjGkt8wHxt2a65oLaeFEV/gogo-protobuf/proto"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	chunk "github.com/ipfs/go-ipfs/importer/chunk"
-	help "github.com/ipfs/go-ipfs/importer/helpers"
-	trickle "github.com/ipfs/go-ipfs/importer/trickle"
-	mdag "github.com/ipfs/go-ipfs/merkledag"
-	ft "github.com/ipfs/go-ipfs/unixfs"
-	uio "github.com/ipfs/go-ipfs/unixfs/io"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	chunk "github.com/RealImage/go-ipfs/importer/chunk"
+	help "github.com/RealImage/go-ipfs/importer/helpers"
+	trickle "github.com/RealImage/go-ipfs/importer/trickle"
+	mdag "github.com/RealImage/go-ipfs/merkledag"
+	ft "github.com/RealImage/go-ipfs/unixfs"
+	uio "github.com/RealImage/go-ipfs/unixfs/io"
 	logging "gx/ipfs/QmaDNZ4QMdBdku1YZWBysufYyoQt1negQGNav6PLYarbY8/go-log"
 )
 

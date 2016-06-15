@@ -1,8 +1,8 @@
 package helpers
 
 import (
-	"github.com/ipfs/go-ipfs/importer/chunk"
-	dag "github.com/ipfs/go-ipfs/merkledag"
+	"github.com/RealImage/go-ipfs/importer/chunk"
+	dag "github.com/RealImage/go-ipfs/merkledag"
 )
 
 // DagBuilderHelper wraps together a bunch of objects needed to

@@ -9,8 +9,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/bazil.org/fuse"
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/bazil.org/fuse/fs/fstestutil"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/bazil.org/fuse"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/bazil.org/fuse/fs/fstestutil"
 )
 
 func TestMountOptionCommaError(t *testing.T) {

@@ -3,10 +3,10 @@ package message
 import (
 	"io"
 
-	blocks "github.com/ipfs/go-ipfs/blocks"
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	pb "github.com/ipfs/go-ipfs/exchange/bitswap/message/pb"
-	wantlist "github.com/ipfs/go-ipfs/exchange/bitswap/wantlist"
+	blocks "github.com/RealImage/go-ipfs/blocks"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	pb "github.com/RealImage/go-ipfs/exchange/bitswap/message/pb"
+	wantlist "github.com/RealImage/go-ipfs/exchange/bitswap/wantlist"
 	inet "gx/ipfs/QmVL44QeoQDTYK8RVdpkyja7uYcK3WDNoBNHVLonf9YDtm/go-libp2p/p2p/net"
 
 	ggio "gx/ipfs/QmZ4Qi3GaRbjcx28Sme5eMH7RQjGkt8wHxt2a65oLaeFEV/gogo-protobuf/io"

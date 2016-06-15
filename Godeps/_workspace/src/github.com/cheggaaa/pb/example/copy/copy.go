@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/cheggaaa/pb"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/cheggaaa/pb"
 	"io"
 	"net/http"
 	"os"

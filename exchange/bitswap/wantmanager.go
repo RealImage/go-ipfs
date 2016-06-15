@@ -4,11 +4,11 @@ import (
 	"sync"
 	"time"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	engine "github.com/ipfs/go-ipfs/exchange/bitswap/decision"
-	bsmsg "github.com/ipfs/go-ipfs/exchange/bitswap/message"
-	bsnet "github.com/ipfs/go-ipfs/exchange/bitswap/network"
-	wantlist "github.com/ipfs/go-ipfs/exchange/bitswap/wantlist"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	engine "github.com/RealImage/go-ipfs/exchange/bitswap/decision"
+	bsmsg "github.com/RealImage/go-ipfs/exchange/bitswap/message"
+	bsnet "github.com/RealImage/go-ipfs/exchange/bitswap/network"
+	wantlist "github.com/RealImage/go-ipfs/exchange/bitswap/wantlist"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 	peer "gx/ipfs/QmbyvM8zRFDkbFdYyt1MnevUMJ62SiSGbfDFZ3Z8nkrzr4/go-libp2p-peer"
 )

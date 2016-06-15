@@ -3,8 +3,8 @@ package record
 import (
 	"errors"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	path "github.com/ipfs/go-ipfs/path"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	path "github.com/RealImage/go-ipfs/path"
 )
 
 // A SelectorFunc selects the best value for the given key from

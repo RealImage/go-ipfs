@@ -4,9 +4,9 @@ import (
 	"math"
 	"testing"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	"github.com/ipfs/go-ipfs/exchange/bitswap/wantlist"
-	"github.com/ipfs/go-ipfs/thirdparty/testutil"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	"github.com/RealImage/go-ipfs/exchange/bitswap/wantlist"
+	"github.com/RealImage/go-ipfs/thirdparty/testutil"
 	"gx/ipfs/QmbyvM8zRFDkbFdYyt1MnevUMJ62SiSGbfDFZ3Z8nkrzr4/go-libp2p-peer"
 )
 

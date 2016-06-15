@@ -6,12 +6,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ipfs/go-ipfs/commands/files"
-	bal "github.com/ipfs/go-ipfs/importer/balanced"
-	"github.com/ipfs/go-ipfs/importer/chunk"
-	h "github.com/ipfs/go-ipfs/importer/helpers"
-	trickle "github.com/ipfs/go-ipfs/importer/trickle"
-	dag "github.com/ipfs/go-ipfs/merkledag"
+	"github.com/RealImage/go-ipfs/commands/files"
+	bal "github.com/RealImage/go-ipfs/importer/balanced"
+	"github.com/RealImage/go-ipfs/importer/chunk"
+	h "github.com/RealImage/go-ipfs/importer/helpers"
+	trickle "github.com/RealImage/go-ipfs/importer/trickle"
+	dag "github.com/RealImage/go-ipfs/merkledag"
 	logging "gx/ipfs/QmaDNZ4QMdBdku1YZWBysufYyoQt1negQGNav6PLYarbY8/go-log"
 )
 

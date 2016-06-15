@@ -14,7 +14,7 @@ import (
 	"io"
 	"reflect"
 
-	"github.com/ipfs/go-ipfs/path"
+	"github.com/RealImage/go-ipfs/path"
 	logging "gx/ipfs/QmaDNZ4QMdBdku1YZWBysufYyoQt1negQGNav6PLYarbY8/go-log"
 )
 

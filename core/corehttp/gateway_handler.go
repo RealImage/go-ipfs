@@ -10,18 +10,18 @@ import (
 	"strings"
 	"time"
 
-	humanize "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/dustin/go-humanize"
+	humanize "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/dustin/go-humanize"
 	"gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	core "github.com/ipfs/go-ipfs/core"
-	"github.com/ipfs/go-ipfs/importer"
-	chunk "github.com/ipfs/go-ipfs/importer/chunk"
-	dag "github.com/ipfs/go-ipfs/merkledag"
-	dagutils "github.com/ipfs/go-ipfs/merkledag/utils"
-	path "github.com/ipfs/go-ipfs/path"
-	"github.com/ipfs/go-ipfs/routing"
-	uio "github.com/ipfs/go-ipfs/unixfs/io"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	core "github.com/RealImage/go-ipfs/core"
+	"github.com/RealImage/go-ipfs/importer"
+	chunk "github.com/RealImage/go-ipfs/importer/chunk"
+	dag "github.com/RealImage/go-ipfs/merkledag"
+	dagutils "github.com/RealImage/go-ipfs/merkledag/utils"
+	path "github.com/RealImage/go-ipfs/path"
+	"github.com/RealImage/go-ipfs/routing"
+	uio "github.com/RealImage/go-ipfs/unixfs/io"
 )
 
 const (

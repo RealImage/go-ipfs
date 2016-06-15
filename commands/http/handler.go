@@ -11,11 +11,11 @@ import (
 	"strings"
 	"sync"
 
-	cors "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/rs/cors"
-	"github.com/ipfs/go-ipfs/repo/config"
+	cors "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/rs/cors"
+	"github.com/RealImage/go-ipfs/repo/config"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
+	cmds "github.com/RealImage/go-ipfs/commands"
 	logging "gx/ipfs/QmaDNZ4QMdBdku1YZWBysufYyoQt1negQGNav6PLYarbY8/go-log"
 )
 

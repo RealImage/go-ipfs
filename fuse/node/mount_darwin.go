@@ -10,7 +10,7 @@ import (
 	"strings"
 	"syscall"
 
-	core "github.com/ipfs/go-ipfs/core"
+	core "github.com/RealImage/go-ipfs/core"
 )
 
 func init() {

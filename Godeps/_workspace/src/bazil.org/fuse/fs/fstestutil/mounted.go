@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/bazil.org/fuse"
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/bazil.org/fuse/fs"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/bazil.org/fuse"
+	"github.com/RealImage/go-ipfs/Godeps/_workspace/src/bazil.org/fuse/fs"
 )
 
 // Mount contains information about the mount for the test to use.

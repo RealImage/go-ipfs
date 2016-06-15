@@ -6,7 +6,7 @@ import (
 
 	prometheus "gx/ipfs/QmdhsRK1EK2fvAz2i2SH5DEfkL6seDuyMYEsxKa9Braim3/client_golang/prometheus"
 
-	core "github.com/ipfs/go-ipfs/core"
+	core "github.com/RealImage/go-ipfs/core"
 )
 
 // This adds the scraping endpoint which Prometheus uses to fetch metrics.

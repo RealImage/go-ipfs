@@ -7,12 +7,12 @@ import (
 	"sort"
 	"text/tabwriter"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
-	core "github.com/ipfs/go-ipfs/core"
-	merkledag "github.com/ipfs/go-ipfs/merkledag"
-	path "github.com/ipfs/go-ipfs/path"
-	unixfs "github.com/ipfs/go-ipfs/unixfs"
-	unixfspb "github.com/ipfs/go-ipfs/unixfs/pb"
+	cmds "github.com/RealImage/go-ipfs/commands"
+	core "github.com/RealImage/go-ipfs/core"
+	merkledag "github.com/RealImage/go-ipfs/merkledag"
+	path "github.com/RealImage/go-ipfs/path"
+	unixfs "github.com/RealImage/go-ipfs/unixfs"
+	unixfspb "github.com/RealImage/go-ipfs/unixfs/pb"
 )
 
 type LsLink struct {
@@ -35,7 +35,7 @@ type LsOutput struct {
 
 var LsCmd = &cmds.Command{
 	Helptext: cmds.HelpText{
-		Tagline: "List directory contents for Unix filesystem objects.",
+		Tagline:  "List directory contents for Unix filesystem objects.",
 		Synopsis: "ipfs file ls <path>",
 		ShortDescription: `
 Displays the contents of an IPFS or IPNS object(s) at the given path.

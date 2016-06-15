@@ -3,7 +3,7 @@ package commands
 import (
 	"errors"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
+	cmds "github.com/RealImage/go-ipfs/commands"
 )
 
 var MountCmd = &cmds.Command{

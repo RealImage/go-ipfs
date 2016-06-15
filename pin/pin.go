@@ -7,10 +7,10 @@ import (
 	"sync"
 	"time"
 
-	ds "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
-	key "github.com/ipfs/go-ipfs/blocks/key"
-	"github.com/ipfs/go-ipfs/blocks/set"
-	mdag "github.com/ipfs/go-ipfs/merkledag"
+	ds "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
+	key "github.com/RealImage/go-ipfs/blocks/key"
+	"github.com/RealImage/go-ipfs/blocks/set"
+	mdag "github.com/RealImage/go-ipfs/merkledag"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 	logging "gx/ipfs/QmaDNZ4QMdBdku1YZWBysufYyoQt1negQGNav6PLYarbY8/go-log"
 )
@@ -45,11 +45,11 @@ const (
 func PinModeToString(mode PinMode) (string, bool) {
 	m := map[PinMode]string{
 		Recursive: linkRecursive,
-		Direct: linkDirect,
-		Indirect: linkIndirect,
-		Internal: linkInternal,
+		Direct:    linkDirect,
+		Indirect:  linkIndirect,
+		Internal:  linkInternal,
 		NotPinned: linkNotPinned,
-		Any: linkAny,
+		Any:       linkAny,
 	}
 	s, ok := m[mode]
 	return s, ok
@@ -58,12 +58,12 @@ func PinModeToString(mode PinMode) (string, bool) {
 func StringToPinMode(s string) (PinMode, bool) {
 	m := map[string]PinMode{
 		linkRecursive: Recursive,
-		linkDirect: Direct,
-		linkIndirect: Indirect,
-		linkInternal: Internal,
+		linkDirect:    Direct,
+		linkIndirect:  Indirect,
+		linkInternal:  Internal,
 		linkNotPinned: NotPinned,
-		linkAny: Any,
-		linkAll: Any, // "all" and "any" means the same thing
+		linkAny:       Any,
+		linkAll:       Any, // "all" and "any" means the same thing
 	}
 	mode, ok := m[s]
 	return mode, ok

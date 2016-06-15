@@ -8,12 +8,12 @@ import (
 	"sync"
 	"testing"
 
-	ds "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
-	dssync "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/sync"
-	blocks "github.com/ipfs/go-ipfs/blocks"
-	blockstore "github.com/ipfs/go-ipfs/blocks/blockstore"
-	message "github.com/ipfs/go-ipfs/exchange/bitswap/message"
-	testutil "github.com/ipfs/go-ipfs/thirdparty/testutil"
+	ds "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore"
+	dssync "github.com/RealImage/go-ipfs/Godeps/_workspace/src/github.com/ipfs/go-datastore/sync"
+	blocks "github.com/RealImage/go-ipfs/blocks"
+	blockstore "github.com/RealImage/go-ipfs/blocks/blockstore"
+	message "github.com/RealImage/go-ipfs/exchange/bitswap/message"
+	testutil "github.com/RealImage/go-ipfs/thirdparty/testutil"
 	context "gx/ipfs/QmZy2y8t9zQH2a1b8q2ZSLKp17ATuJoCNxxyMFG5qFExpt/go-net/context"
 	peer "gx/ipfs/QmbyvM8zRFDkbFdYyt1MnevUMJ62SiSGbfDFZ3Z8nkrzr4/go-libp2p-peer"
 )

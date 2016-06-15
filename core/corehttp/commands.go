@@ -7,11 +7,11 @@ import (
 	"strconv"
 	"strings"
 
-	commands "github.com/ipfs/go-ipfs/commands"
-	cmdsHttp "github.com/ipfs/go-ipfs/commands/http"
-	core "github.com/ipfs/go-ipfs/core"
-	corecommands "github.com/ipfs/go-ipfs/core/commands"
-	config "github.com/ipfs/go-ipfs/repo/config"
+	commands "github.com/RealImage/go-ipfs/commands"
+	cmdsHttp "github.com/RealImage/go-ipfs/commands/http"
+	core "github.com/RealImage/go-ipfs/core"
+	corecommands "github.com/RealImage/go-ipfs/core/commands"
+	config "github.com/RealImage/go-ipfs/repo/config"
 )
 
 const originEnvKey = "API_ORIGIN"
